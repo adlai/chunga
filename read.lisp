@@ -180,7 +180,7 @@ Returns NIL if LINE consists solely of whitespace."
                                              :stream stream
                                              :format-control "Couldn't find colon in header line ~S."
                                              :format-arguments (list line)))))
-                   (cons (as-keyword (subseq line 0 colon-pos))
+                   (cons (subseq line 0 colon-pos)
                          (trim-whitespace (subseq line (1+ colon-pos)))))))
              (add-header (pair)
                "Adds the name/value cons PAIR to HEADERS.  Takes

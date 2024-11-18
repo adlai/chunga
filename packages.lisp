@@ -40,6 +40,7 @@
            :as-keyword-if-found
            :as-keyword
            :as-capitalized-string
+           :case-normalize-string
            :chunga-error
            :chunga-warning
            :chunked-input-stream
@@ -69,4 +70,4 @@
            :with-character-stream-semantics
            :chunked-input-stream-eof-after-last-chunk
            :chunked-input-stream-length))
-           
+
